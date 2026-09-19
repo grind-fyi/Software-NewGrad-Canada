@@ -1,0 +1,60 @@
+<!--
+  Source for banner.png — the ad at the top of every feed README.
+
+  Rendered at 1200x240 CSS px with deviceScaleFactor 2 (so banner.png is
+  2400x480). Full-bleed brand teal so it reads on GitHub's light *and* dark
+  themes without needing a <picture> swap. Regenerate with assets/render.mjs.
+-->
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 240px; }
+  body {
+    font-family: "SF Pro Display", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .banner {
+    width: 1200px; height: 240px;
+    display: flex; align-items: center; gap: 44px;
+    padding: 0 56px;
+    background:
+      radial-gradient(900px 300px at 85% -40%, rgba(94,234,212,0.28), transparent 70%),
+      linear-gradient(100deg, #0f766e 0%, #115e59 52%, #0f3d3a 100%);
+    color: #fff;
+  }
+  .mark { display: flex; flex-direction: column; align-items: center; gap: 10px; flex: none; }
+  .wordmark { font-size: 22px; font-weight: 700; letter-spacing: 0.02em; color: #99f6e4; }
+  .copy { flex: 1; display: flex; flex-direction: column; gap: 12px; }
+  h1 { font-size: 46px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.05; }
+  h1 .accent { color: #5eead4; }
+  p { font-size: 20px; line-height: 1.4; color: rgba(240,253,250,0.82); max-width: 620px; }
+  .cta { flex: none; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .pill {
+    display: flex; align-items: center; gap: 10px;
+    background: #fff; color: #0f766e;
+    font-size: 22px; font-weight: 700;
+    padding: 18px 30px; border-radius: 999px;
+    box-shadow: 0 14px 34px rgba(4,47,46,0.42);
+  }
+  .fine { font-size: 15px; color: rgba(204,251,241,0.75); }
+</style>
+
+<div class="banner">
+  <div class="mark">
+    <svg width="72" height="72" viewBox="0 0 24 24" fill="none">
+      <path d="M12 3a6 6 0 0 0-6 6v3.2c0 .6-.2 1.2-.7 1.7L4 15.4c-.6.7-.1 1.8.8 1.8h14.4c.9 0 1.4-1.1.8-1.8l-1.3-1.5a2.5 2.5 0 0 1-.7-1.7V9a6 6 0 0 0-6-6Z" fill="#ffffff"/>
+      <path d="M9.8 19.2a2.3 2.3 0 0 0 4.4 0" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="18" cy="6" r="4.4" fill="#5eead4" stroke="#0f766e" stroke-width="1.6"/>
+    </svg>
+    <span class="wordmark">grind.fyi</span>
+  </div>
+
+  <div class="copy">
+    <h1>Be the first <span class="accent">to apply.</span></h1>
+    <p>grind watches every job board and auto-applies with your resume the minute a posting appears &mdash; checkpoints for anything personal, nothing sent without your OK.</p>
+  </div>
+
+  <div class="cta">
+    <div class="pill">Download free &nbsp;&rarr;</div>
+    <div class="fine">macOS &middot; Windows &middot; Linux</div>
+  </div>
+</div>
